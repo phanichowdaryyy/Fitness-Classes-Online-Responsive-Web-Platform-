@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Streaming Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: url('https://i.ibb.co/m502NTY4/360-F-308728099-Ad-WDcj-BTazzf-GCAvb54-Hu-Wma-Tmbd9-Xi9.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 27, 42, 0.7);
+        }
+        .home-container {
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        .home-container h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .home-container p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .home-container button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            background: #ff4500;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome to Fitness Streaming Classes</h1>
+        <p>Join our live fitness sessions and stay fit from home.</p>
+        <div class="button-container">
+            <button onclick="window.location.href='user.html'">User</button>
+            <button onclick="window.location.href='admin.html'">admin</button>
+        </div>
+    </div>
+</body>
+</html>

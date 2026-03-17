@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Fitness Streaming</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f3f3f3;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery-container img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>User Gallery</h1>
+    <div class="gallery-container" id="galleryContainer">
+        <!-- Images will be displayed here -->
+    </div>
+
+    <script>
+        function loadImages() {
+            const storedImage = localStorage.getItem("uploadedImage");
+            if (storedImage) {
+                const imgElement = document.createElement("img");
+                imgElement.src = storedImage;
+                document.getElementById("galleryContainer").appendChild(imgElement);
+            }
+        }
+
+        window.onload = loadImages;
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Streaming</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url('https://i.ibb.co/b58bGYct/360-F-429356296-CVQ5-Lk-C6-Pl55k-UNLq-Lis-VKg-Tw9vjyif1.jpg') no-repeat center center/cover;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .fitness-journey {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .fitness-classes {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            margin-top: 50px;
+        }
+
+        .youtube-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .youtube-gallery a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .youtube-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .youtube-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .description {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fitness-journey">Fitness Journey</div>
+    <div class="fitness-classes">Fitness Classes</div>
+
+    <div class="youtube-gallery">
+        <a href="https://youtu.be/iQZlQyvkqrU?si=2_dB7__lvzkeihU6" target="_blank">
+            <img src="https://img.youtube.com/vi/iQZlQyvkqrU/0.jpg" alt="Workout Video 1">
+        </a>
+        <a href="https://youtu.be/LGRsUoLIFSU?si=SvzJq2sqvaB9zU_E" target="_blank">
+            <img src="https://img.youtube.com/vi/LGRsUoLIFSU/0.jpg" alt="Workout Video 2">
+        </a>
+        <a href="https://youtu.be/ToXeop3rZG0?si=coFlylPtv2gnqU03" target="_blank">
+            <img src="https://img.youtube.com/vi/ToXeop3rZG0/0.jpg" alt="Workout Video 3">
+        </a>
+        <a href="https://youtu.be/TnPqhmWjNxQ?si=rImdKb8c5zlmc0K_" target="_blank">
+            <img src="https://img.youtube.com/vi/TnPqhmWjNxQ/0.jpg" alt="Workout Video 4">
+        </a>
+        <a href="https://youtu.be/bFZqf0PnP30?si=bO_25mxqjWsZ8gOt" target="_blank">
+            <img src="https://img.youtube.com/vi/bFZqf0PnP30/0.jpg" alt="Workout Video 5">
+        </a>
+        <a href="https://youtu.be/Ksz1fW5tWkU?si=xPHdpVmQDNdj4pcZ" target="_blank">
+            <img src="https://img.youtube.com/vi/Ksz1fW5tWkU/0.jpg" alt="Workout Video 6">
+        </a>
+        <a href="https://youtu.be/JnyyfXA70mY?si=O3Z661oMNU_mlY8D" target="_blank">
+            <img src="https://img.youtube.com/vi/JnyyfXA70mY/0.jpg" alt="Workout Video 7">
+        </a>
+        <a href="https://youtu.be/OTn7lU_FLys?si=S4l8ouk2ixWplqyb" target="_blank">
+            <img src="https://img.youtube.com/vi/OTn7lU_FLys/0.jpg" alt="Workout Video 8">
+        </a>
+    </div>
+
+    <div class="description">
+        <p>Regular fitness classes can help you stay in shape, boost your energy levels, and improve overall health. Stay committed to your fitness journey and enjoy the process!</p>
+    </div>
+</body>
+</html>

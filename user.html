@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Streaming</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url('https://i.ibb.co/xw3Cz9Q/pose-muscle-muscle-rod-press-hd-wallpaper-preview.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar div a {
+            color: #f8f9fa;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .navbar div a:hover {
+            color: #adb5bd;
+        }
+
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            animation: fadeIn 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .fitness-journey {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .gallery-section {
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .classes-section {
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="#home">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="#gallery">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="fitness-journey">Fitness Journey</div>
+
+    <div class="hero" id="home">
+        <h1>Fitness Streaming Classes</h1>
+    </div>
+
+    <div class="gallery-section" id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery">
+            <img src="https://i.ibb.co/VpTjgF55/360-F-99821575-n-VEHTBXz-Un-Tc-LIKN6y-Oym-AWAn-Fw-Eyb-Gb.jpg">
+            <img src="https://i.ibb.co/5XyK7FJS/360-F-308728099-Ad-WDcj-BTazzf-GCAvb54-Hu-Wma-Tmbd9-Xi9.jpg">
+            <img src="https://i.ibb.co/23tjG7jx/360-F-809482598-i-FY3-RUs-AXrpa-JAu-Fh2-Uij-Lu-Lh-GMQYJDb.jpg">
+             <img src="https://i.ibb.co/93mTs3VM/1069371.jpg">
+            <img src="https://i.ibb.co/G4CcqbKx/1233907.jpg">
+            <img src="https://i.ibb.co/RGFmhRfB/colbor-222-x-jpg.webp">
+            <img src="https://i.ibb.co/R4PVNpff/d3e4b7244abd48bb2b0752cc1e9a5653-2.jpg">
+            <img src="https://i.ibb.co/xthLPkQB/d3e4b7244abd48bb2b0752cc1e9a5653.jpg">
+            <img src="https://i.ibb.co/gMsjjZ8X/gettyimages-1183038884-612x612.jpg">
+            <img src="https://i.ibb.co/hxJk6fc8/good-looking-girl-photo-gorgeous-blonde-woman-gym-her-weekend-time-146671-16482-jpg.jpg">
+            <img src="https://i.ibb.co/XZqPB7Pk/images.jpg">
+            <img src="https://i.ibb.co/qY3QtQNx/images.jpg">
+            <img src="https://i.ibb.co/6cK2Tkqk/man-muscles-tattoo-fitness-wallpaper-preview.jpg">
+            <img src="https://i.ibb.co/Q0cLxmG/people-working-out-indoors-together-with-dumbbells-23-2149175410-jpg.jpg">
+            <img src="https://i.ibb.co/3mCsJwwt/pexels-photo-1229356.webp">
+            <img src="https://i.ibb.co/VYwZ6Mt4/powerful-stylish-bodybuilder-with-tattoo-his-arm-doing-exercises-with-dumbbells-isolated-dark-backgr.jpg">
+        </div>
+    </div>
+
+    <div class="classes-section" id="classes">
+        <h2>Our Classes</h2>
+        <p>Discover the best fitness classes designed for you!</p>
+    </div>
+</body>
+</html>
